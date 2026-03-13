@@ -18,6 +18,7 @@ body {
 
 .tasks {
   margin-top: 10px;
+  min-height: 100px;
 }
 
 .task {
@@ -25,4 +26,5 @@ body {
   padding: 10px;
   margin-top: 8px;
   border-radius: 5px;
+  cursor: grab;
 }
