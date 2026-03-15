@@ -1,12 +1,15 @@
 <!doctype html>
 <html>
   <head>
-    <title>Kanban App</title>
+    <meta charset="utf-8" />
+    <title>Kanban Board</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <h1>Kanban Board</h1>
+
+    <input id="search" placeholder="Search tasks..." />
 
     <div id="board">
       <div class="column" id="todo">
@@ -25,6 +28,28 @@
         <h2>Done</h2>
         <button class="add-task">Add Task</button>
         <div class="tasks"></div>
+      </div>
+    </div>
+
+    <!-- Modal Form -->
+    <div id="taskForm" class="hidden">
+      <div class="form-box">
+        <h3>Add Task</h3>
+
+        <input id="taskText" placeholder="Task description" />
+
+        <input type="date" id="taskDate" />
+
+        <select id="taskPriority">
+          <option value="low">Low Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+
+        <div class="form-buttons">
+          <button id="createTask">Add</button>
+          <button id="cancelForm">Cancel</button>
+        </div>
       </div>
     </div>
 
